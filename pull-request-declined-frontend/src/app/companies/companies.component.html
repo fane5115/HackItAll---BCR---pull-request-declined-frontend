@@ -1,0 +1,27 @@
+<h2>My Companies</h2>
+
+<!-- <app-company-search></app-company-search> -->
+
+<!-- <form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Number</mat-label>
+    <input type="text"
+           placeholder="Pick one"
+           aria-label="Number"
+           matInput
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let company of companies" [value]="company">
+        {{company}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form> -->
+<ul class="heroes">
+  <li *ngFor="let company of companies">
+    <a routerLink="/detail/{{company}}">
+       {{company}}
+    </a>
+  </li>
+</ul>
+

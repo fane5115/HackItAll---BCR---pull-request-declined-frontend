@@ -1,0 +1,5 @@
+<div *ngIf="coords">
+  <h2>{{company_name}} Details</h2>
+  <plotly-plot [data]="graph1.data" [layout]="graph1.layout"></plotly-plot>
+  <button (click)="goBack()">go back</button>
+</div>
